@@ -23,8 +23,8 @@ import Update
 -- view
 -------------------------------------------------------------------------------
 
-viewModel :: () -> () -> Model -> View () Model Action
-viewModel _ _ model =
+viewModel :: Model -> View () () Model Action
+viewModel model =
   div_
   [ class_ "app" ]
   [ header_
